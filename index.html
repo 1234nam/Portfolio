@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8c112ed343.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.jpeg" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#internship">Internship</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Front-End Developer</p>
+            <h1>Hi,I'm <span>Namratha</span> <br>from RLJIT</h1>
+        </div>
+    </div>
+</div>
+<!---------------ABOUT--------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/about.jfif">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I'm BE graduate at RLJIT. I've decent knowledge on HTML,CSS and JavaScript. Currently learning Data structures and algorithms in Java. Enthusiast to learn and explore many more.</p>
+            
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('project')">Project</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>Front-End Development</span><br>HTML,CSS,JavaScript</li>
+                    <li><span>Languages</span><br>Java,Python,SQL</li>
+                    <li><span>Framework</span><br>ReactJS</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="project">
+                <ul>
+                    <li><span>Online Shopping App</span><br>JavaScript,HTML,CSS,ReactJS</li>
+                    <li><span>Face-Emotion Detection Using ML</span><br>Using  Python, VS Code, Data Sets, CNN Algorithm</li>
+                    <li><span>Online Shopping App</span><br>JavaScript,HTML,CSS,ReactJS</li>
+                    <li><span>School Management System</span><br>VS Code, Xampp, PHP, HTML, CSS, Java,SQL </li>
+                    <li><span>Interior Room Design</span><br> Microsoft Visual Studio, C/C++ Compiler</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>Bachelor of Engineering</span><br>2020-2024 | CGPA - 8.5 | Computer Science and Engineering</li>
+                    <li><span>Senior Secondary - XII</span><br>2018-2020 | Percentage - 71.60%</li>
+                    <li><span>High School</span><br>2018 | Percentage - 81.60%</li>
+                </ul>
+            </div>
+    
+        </div>
+    </div>
+</div>
+<!------------INTERNSHIP-------->
+
+<div id="internship">
+    <div class="container">
+        <h1 class="sub-title">My Internship</h1>
+        <div class="internship-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Cranes Varsity</h2>
+                <p>This internship aims to bridge the gap between theoretical knowledge and real-world application, providing hands-on experience with the tools and techniques used in data science and machine learning.</p>
+                <a href="#">view Certificate</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>Technologices Private Limite</h2>
+                <p>This internship is a fantastic opportunity to gain practical experience, develop technical skills, and prepare for a career in software development. Embrace the challenges and make the most of the learning opportunities that come your way.</p>
+                <a href="#">View Certificate</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-----------PROJECTS-------->
+<div id="project">
+    <div class="container">
+        <h1 class="sub-title">My Project</h1>
+        <div class="project-list">
+            <div class="project">
+                <img src="images/project1.jpeg" >
+                <div class="layer">
+                    <h3>Face-Emotion Detection</h3>
+                    <p>Face emotion detection using machine learning is a powerful tool that can analyze and interpret human emotions from facial expressions.</p>
+                    <a href="https://github.com/1234nam/Face_emotion_detection"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/project2.jpeg" >
+                <div class="layer">
+                    <h3>Ecommerece</h3>
+                    <p>The project aimed to create a user-friendly platform that enhances the online shopping experience through seamless functionality and intuitive design.</p>
+                    <a href="https://github.com/1234nam/ecommerce-reactjs"><i class="fa-solid fa-link"></i></a>                    
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/project3.jfif" >
+                <div class="layer">
+                    <h3>School Management System</h3>
+                    <p>This project sought to streamline and enhance the management of academic, administrative, and communication processes within educational institutions.</p>
+                    <a href="https://github.com/1234nam/school-management-system"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+<!---------------CONTACT----------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>namrathada22ashwath@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+91 9148122649</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/namratha2003/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/1234nam"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="images/My CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form class="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Namratha<i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+
+<script>
+
+     var tablinks = document.getElementsByClassName("tab-links");
+     var tabcontents = document.getElementsByClassName("tab-contents");
+
+     function opentab(tabname){
+         for(tablink of tablinks){
+             tablink.classList.remove("active-link");
+         }
+         for(tabcontent of tabcontents){
+             tabcontent.classList.remove("active-tab");
+         }
+         event. currentTarget.classList.add("active-link");
+         document.getElementById(tabname).classList.add("active-tab");
+     }
+</script>
+
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemeu.style.right= "0";
+    }
+    function closemenu(){
+        sidemeu.style.right= "-200px";
+
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzFI3JeIszHA7M9wWSko8M6d707_ccuuksyzODXh2HoToOA8rPQdyF8ThJI0viHRJDFDg/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
